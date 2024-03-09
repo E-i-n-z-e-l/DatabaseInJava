@@ -1,11 +1,15 @@
 package JavaBase.models;
 
+import javax.persistence.*;
 import java.util.Random;
-
+@Entity
+@Table(name = "students")
 public class Student {
     private static final String[] names = new String[] { "Анатолий", "Глеб", "Клим", "Мартин", "Лазарь", "Владлен",
                                                         "Клим", "Панкратий", "Рубен", "Герман" };
     private static final Random random = new Random();
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private int age;
