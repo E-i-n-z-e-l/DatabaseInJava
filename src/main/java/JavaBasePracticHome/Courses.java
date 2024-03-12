@@ -24,19 +24,19 @@ public class Courses {
             System.out.println("Object lesson save successfully");
 
             // Чтение объекта из базы данных:
-            SchoolDB retrievedLesson = session.get(SchoolDB.class, lesson.getId());
-            System.out.println("Object lesson retrieved successfully");
-            System.out.println("Retrieved student object: " + retrievedLesson);
+//            SchoolDB retrievedLesson = session.get(SchoolDB.class, lesson.getId());
+//            System.out.println("Object lesson retrieved successfully");
+//            System.out.println("Retrieved student object: " + retrievedLesson);
 
             // Обновление объекта:
-            retrievedLesson.updateTitle();
-            retrievedLesson.updateDuration();
-            session.update(retrievedLesson);
-            System.out.println("Object lesson update successfully");
+//            retrievedLesson.updateTitle();
+//            retrievedLesson.updateDuration();
+//            session.update(retrievedLesson);
+//            System.out.println("Object lesson update successfully");
 
             // Удаление объекта:
-            session.delete(retrievedLesson);
-            System.out.println("Object student delete successfully");
+//            session.delete(retrievedLesson);
+//            System.out.println("Object student delete successfully");
 
         }
         catch (Exception e) {
